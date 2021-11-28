@@ -1,18 +1,20 @@
-import java.util.*;
+package p2;
 
 public class Student {
-    String name;
+    public String name;
+    public int age;
+    public String program;
     Student(){
-        name ="Unknown";
-    }
-    Student(String name ){
-        this.name=name;
+
     }
 
-    public static void main(String[] args) {
-        Student obj=new Student();
-        Student obj1= new Student("Tinu");
-        System.out.println(obj.name);
-        System.out.println(obj1.name);
+    Student(int a,String n, String p){
+        this.name=n;
+        this.age=a;
+        this.program=p;
+    }
+
+    public void display_student_info(){
+        System.out.println(name+" "+ age+" "+program);
     }
 }
